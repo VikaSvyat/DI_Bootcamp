@@ -1,0 +1,32 @@
+#I have a cat and a dog. I got them at the same time as kitten/puppy. 
+#That was humanYears years ago. 
+#Print their respective ages now as [humanYears,catYears,dogYears]
+#humanYears >= 1 humanYears are whole numbers only
+#Cat Years 15 cat years for first year 
+#+9 cat years for second year 
+#+4 cat years for each year after that
+#Dog Years 15 dog years for first year 
+#+9 dog years for second year 
+#+5 dog years for each year after that
+
+print ("I have a cat and a dog. I got them at the same time as kitten/puppy.")
+humanYears = input ("How many year ago was that? ")
+try:
+    humanYears = int (humanYears)
+except Exception:
+    print ("isn't integer")
+#age_cat = humanYears
+if humanYears == 1:
+    age_cat = 9
+    age_dog = 9
+elif humanYears == 2:
+    age_cat = 15+9
+    age_dog = 15+9
+else:
+    age_cat = 24+(humanYears-2)*4
+    age_dog = 24+(humanYears-2)*5
+result = [humanYears,age_cat,age_dog]
+
+print (result)
+
+    

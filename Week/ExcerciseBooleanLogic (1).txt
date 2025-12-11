@@ -1,0 +1,76 @@
+#Declare a variable called first and assign it to the value "Hello World".
+first="Hello World"
+
+#Write a comment that says 
+#This is a comment.
+
+#Log a message to the terminal that says "I AM A COMPUTER!"
+print("I AM A COMPUTER!")
+
+#Write an if statement that checks if 1 is less than 2 and if 4 is greater 
+#than 2. If it is, show the message "Math is fun."
+if (1<2 and 4>2):
+    print("Math is fun.")
+
+#Assign a variable called nope to an absence of value.
+nope=''
+
+#Use the language’s “and” boolean operator to combine the language’s “true” 
+#value with its “false” value.
+A= True
+B= not A
+print(A and B)
+
+#Calculate the length of the string "What's my length?"
+ll=len("What's my length?")
+print(f"length of 'What's my length?' {ll}")
+
+#Convert the string "i am shouting" to uppercase.
+print('i am shouting'.upper())
+
+#Convert the string "1000"to the number 1000.
+print(int("1000"))
+
+#Combine the number 4 with the string "real" to produce "4real".
+print(str(4)+"real")
+
+#Record the output of the expression 3 * "cool".
+print(3 * "cool")
+
+#Record the output of the expression 1 / 0.
+try:
+    print(1 / 0)
+except ZeroDivisionError:
+    print('ZeroDivisionError! ')
+
+#Determine the type of [].
+type(None)()
+
+#Ask the user for their name, and store it in a variable called name.
+name = input ("What's your name? ")
+
+#Ask the user for a number. If the number is negative, show a message 
+#that says "That number is less than 0!" If the number is positive, 
+#show a message that says "That number is greater than 0!" Otherwise, 
+#show a message that says "You picked 0!.
+n = int(input ("Insert a number: "))
+if (n < 0):
+    print ("That number is less than 0!")
+elif n > 0:
+    print("That number is greater than 0!")
+else:
+    print ("You picked 0!")
+
+#Find the index of "l" in "apple".
+print("apple".find('l'))
+
+#Check whether "y" is in "xylophone".
+pos = 'xylophone'.find('y')
+if ('xylophone'.find('y') == -1):
+    print ('No "y"')
+else: 
+    print (f'there are "y" on position {pos+1}')
+
+#Check whether a string called my_string is all in lowercase.
+my_string = input ("Inser a string: ")
+print(my_string.islower())
