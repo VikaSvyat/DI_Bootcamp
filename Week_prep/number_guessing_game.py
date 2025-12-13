@@ -1,6 +1,6 @@
 #The program picks a random number between 1-100, 
-#and you have 7 attempts to guess it. 
-#Get hints if you’re too high 📈 or too low 📉!
+#and user have 7 attempts to guess it. 
+#Get hints if user is too high 📈 or too low 📉!
 import random
 # def number_guessing_game():
 guessed_number = random.randint(1, 100)   # integer between 1 and 100 (inclusive)
@@ -9,9 +9,12 @@ attempt_number = 0
 i = 0
 list_low = [1]
 list_high = [100]
-print ("You are asked to guess an integer between 1 and 100.")
+print ("You are asked to guess an integer between 1 and 100 in 7 tries.")
+input("Press Enter to start the game...")
 print ("Please enter only integers, otherwise you will lose your attempt!")
+input (" ")
 print ('However you can take a hint (a help) at any time by pressing "h" or "H"')
+input (" ")
 while (i in range (max_attempts) and attempt_number != guessed_number):
     attempt_number =  input (f"Your attempt {i+1}: ")
     if attempt_number in ('h','H'):

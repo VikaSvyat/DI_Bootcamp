@@ -1,0 +1,23 @@
+fruits = ["apple", "banana", "cherry", "date"]
+for f,i in enumerate(fruits):
+    print (f,i)
+    
+books = {
+    '1984': 'George Orwell',
+    'Brave New World': 'Aldous Huxley',
+    'The Great Gatsby': 'F. Scott Fitzgerald'
+}
+#1. Print the author of "1984".
+print(books['1984'])
+#2. Change the author of "The Great Gatsby" to "Francis Scott Fitzgerald".
+books["The Great Gatsby"] = "Francis Scott Fitzgerald"
+#3. Add a new book: "Moby Dick" by Herman Melville.
+books["Moby Dick"] = "Herman Melville"
+#4. Use the get() method to try to access the author of "To Kill a Mockingbird".
+try:
+    print(books["To Kill a Mockingbird"])
+except KeyError:
+    print('not found')
+#5. Remove the book "Brave New World" using the pop() method.
+books.pop("Brave New World")
+print (books)
