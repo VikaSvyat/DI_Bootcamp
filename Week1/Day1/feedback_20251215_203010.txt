@@ -1,0 +1,11 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week1/Day1/homeExercise.py
+suggestions for improvement:
+- The first print statement could be improved by removing the space before 'world'.
+- The comments in Exercise 3 can be improved by removing the hashtag inside the print statements, as it throws an error. If the intention is to predict and then show the output, then the comments should go on separate lines after the respective print statements.
+- In Exercise 6, 'Hello word' has a typo, change it to 'Hello world'
+Brief justification:
+- correctness: All exercises are implemented correctly, addressing the specific requirements of each problem. Exercise 1 uses a print statement to repeat a string multiple times, Exercise 2 calculates a math expression, Exercise 3 predicts the output of comparison operators, Exercise 4 prints a formatted string using a variable, Exercise 5 creates and uses variables in a sentence, Exercise 6 uses an if statement to compare two numbers, and Exercises 7, 8, and 9 obtain user input and provide appropriate output based on conditions, as requested by the chapter content.
+- readability: The code is generally well-formatted and easy to understand. Variable names are descriptive, and the code is logically organized. The only area for improvement is in Exercise 3, where the comments are incorrectly placed and cause errors.
+- performance: The code is efficient and performs the required tasks without unnecessary overhead. The mathematical calculations and comparisons are straightforward and quick.
+- security: The code takes user input in Exercises 7, 8, and 9, but uses `int()` to parse the input to prevent injection attacks. Using `.capitalize()` is a good method to normalise string comparisons. There are no obvious security vulnerabilities.
+
