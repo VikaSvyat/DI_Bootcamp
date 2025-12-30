@@ -1,0 +1,10 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week2/Day5/OOP_XP.py
+suggestions for improvement:
+- In Exercise 4, the `__init__` method initializes class attributes `Zoo.name` and `Zoo.animals` instead of instance attributes `self.name` and `self.animals`. This can lead to unexpected behavior when creating multiple `Zoo` instances.  Change `Zoo.name` to `self.name` and `Zoo.animals` to `self.animals`
+- In Exercise 4, the `get_groups` method prints the result of `sort_animals()` and also returns `True`.  Consider only printing in `get_groups` or returning the sorted dictionary instead of `True`. Also, the instruction said to print each entry on a newline.
+Brief justification:
+- correctness: The code addresses all exercises and fulfills their specific requirements, including class creation, object instantiation, method implementation, and attribute manipulation. The logic for each exercise is generally correct, although Exercise 4 has a potential issue with class vs. instance attributes in the `__init__` method and the display of groups. It includes exercises for Cats, Dogs, Songs and the Zoo. Phone class is implemented too but it's an exra exercise and not part of the original 4 ones. However, it's correct. This justifies a high correctness score.
+- readability: The code is generally well-structured and easy to follow, with clear naming conventions and comments. However, there's room for improvement in code formatting and consistency to enhance readability further. Docstrings could improve readability.
+- performance: The code exhibits good performance, with efficient algorithms and data structures used where appropriate. The implementation of the methods does not introduce any significant performance bottlenecks.
+- security: The code does not involve any external inputs or operations that could pose security risks. The methods implemented are self-contained and do not expose any vulnerabilities.
+
