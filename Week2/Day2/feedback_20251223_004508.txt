@@ -1,0 +1,10 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week2/Day2/Day2XP.py
+suggestions for improvement:
+- Exercise 1: The message is slightly different from the original
+- Exercise 6: Adding ' the Great ' adds extra spaces at the end of the magician's name.
+Brief justification:
+- correctness: All exercises were completed successfully and meet all the requirements, with small issues on exercise 1 and 6. Exercise 1 - The message is slightly different from the original request. Exercise 6 - The final output has an extra space
+- readability: The code is well-formatted and easy to understand. Consistent indentation and meaningful variable names improve readability.
+- performance: The code is efficient and performs well for the given tasks. There are no unnecessary loops or computations.
+- security: The code is secure. User input is validated for Exercise 4, and there are no apparent vulnerabilities.
+
