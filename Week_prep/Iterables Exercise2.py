@@ -4,8 +4,12 @@ list_ = [("name", "Elie"), ("job", "Instructor")]
 new_dict = {}
 for i in list_:
     new_dict[i[0]] = i[1]
-    print(i, i[0], i[1])
-print(new_dict)
+print(new_dict)         
+
+
+
+
+
 #2. Given two lists: ["CA", "NJ", "RI"] and ["California", "New Jersey", "Rhode Island"], return a dictionary that looks like this: 
 # {'CA': 'California', 'NJ': 'New Jersey', 'RI': 'Rhode Island'}.
 list_1 = ["CA", "NJ", "RI"]
