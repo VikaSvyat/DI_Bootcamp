@@ -1,0 +1,12 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week1/Dictionaries/XP.py
+suggestions for improvement:
+- Consider using dictionary comprehension or the `zip` function for a more concise solution in Exercise 1.
+- For Exercise 3, consider providing more context or a more descriptive variable name instead of just printing to improve readability.
+- The bonus part of Exercise 2 is implemented correctly, demonstrating good use of user input and error handling.
+- For Exercise 4, dictionary comprehensions can be used to create the dictionaries in a more concise way.
+Brief justification:
+- correctness: All four exercises are implemented correctly and address the instructions given in the prompt. The code demonstrates understanding of dictionaries, loops, and conditionals, as well as dictionary methods such as `.pop()` and `.update()`. Exercise 4 correctly implements dictionary creation, sorting, and looping with indexes. Exercise 2 incorporates user input, demonstrating an understanding of interactivity. Exercise 3 shows ability to modify and access nested data structures.
+- readability: The code is generally well-formatted and uses descriptive variable names. Adding more comments could further improve readability, particularly in Exercise 3 to explain the intention behind each modification.
+- performance: The code is efficient and avoids unnecessary computations. The use of loops and conditional statements is appropriate for the given tasks. The creation of dictionaries and list manipulation are performed efficiently.
+- security: The code doesn't handle any external input in a way that could lead to security vulnerabilities. The use of `try-except` blocks in the user input section of Exercise 2 is good practice for handling potential errors.
+
