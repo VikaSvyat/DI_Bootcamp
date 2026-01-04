@@ -1,0 +1,23 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week3/Day2/OPP_Inheritance_XP.py
+suggestions for improvement:
+- Exercise 1 is incomplete. The code for Steps 2, 3, and 4 is commented out and needs to be implemented fully inside the `if __name__ == "__main__":` block.  It currently only defines the classes.
+- In Exercise 3, the PetDog class is not implemented. It's crucial to complete this part to fulfill the exercise requirements. Specifically, the `train()`, `play(*args)`, and `do_a_trick()` methods are missing implementation and should be added to test the functionality as requested.
+- Exercise 4 is not implemented. Code must be present to get it assessed.
+Correctness: 75%
+-----
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week3/Day2/OPP_Inheritance_XP_2.py
+suggestions for improvement:
+- The `play` method could be improved by directly accessing the `name` attribute of the dog instances passed in `*args` rather than passing the names as strings. The exercise description is ambiguous about this
+- Consider adding error handling or validation for the inputs to prevent unexpected behavior.
+Correctness: 100%
+-----
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week3/Day2/OPP_Inheritance_XP_3.py
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week3/Day2/OPP_Inheritance_XP_Gold.py
+suggestions for improvement:
+- This code addresses bank account functionality, which is unrelated to the specified chapter content focusing on inheritance, class methods/attributes, polymorphism, exceptions, and the `super()` function. The code implements classes for BankAccount, MinimumBalanceAccount, and ATM functionality, but does not align with the learning objectives outlined in the initial chapter content.
+Correctness: 0%
+-----

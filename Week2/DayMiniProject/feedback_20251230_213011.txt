@@ -1,0 +1,11 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week2/DayMiniProject/MiniProject.py
+suggestions for improvement:
+- The `check_tie` function in the `play` function has a potential issue. The `check_tie` function in `play()` is called with `check_tie(board, 0)`. However, the `check_tie` function expects a boolean `win` which is derived from the `check_win` function. It's more appropriate to pass the actual value returned from `check_win` to ensure the tie condition is evaluated correctly.
+- The `player` variable is initialized to '0', which works because the first call to `next_player` will change it to 'X'. It might be slightly clearer to initialize `player` to 'X' and start the game with player 'X' directly.
+- It could be nice to add a replay function
+Brief justification:
+- correctness: The code accurately implements a Tic Tac Toe game according to the instructions provided in the chapter content. It includes functions for displaying the board, getting player input, checking for a winner, checking for a tie, and managing the game flow. The game logic appears to be correct. One slight deduction is due to the call to `check_tie` within the `play` function, which is called with a constant value rather than the dynamically evaluated return from the check_win function. Thus, the tie condition may be incorrectly triggered.
+- readability: The code is generally well-structured and easy to read, with clear function names and comments. The use of descriptive variable names also enhances readability. The display_board function could be slightly improved for better visual clarity, but overall it is quite readable.
+- performance: The code performs well for its intended purpose. There are no obvious performance bottlenecks. The use of loops and conditional statements is efficient for a game of this scale.
+- security: There are no apparent security concerns with this code, as it primarily deals with user input validation and game logic. However, more sophisticated handling of user input could be considered in a more robust application.
+

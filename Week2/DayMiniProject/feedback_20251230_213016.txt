@@ -1,0 +1,12 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week2/DayMiniProject/MiniProject.py
+suggestions for improvement:
+- The `check_tie` function's argument `win` is not used which is misleading and should be removed.
+- The main `play` loop condition `while player in ('X','0')` uses player as the condition to continue playing, however when a winner is determined the player variable is changed to ' ' which causes the loop to terminate. Consider using a boolean flag such as 'game_over' for loop control and avoid using 'player' for this purpose.
+- In the function `check_tie`, passing the `win` argument is not really contributing to the condition, you can avoid it by just calling the variable in the function
+- The clear_terminal function should probably be called at the start of the play() to clear previous outputs.
+Brief justification:
+- correctness: The code accurately implements a Tic Tac Toe game with two players, following the instructions provided. It covers displaying the board, taking player input, checking for a win, and checking for a tie. However, there is an opportunity to refactor the loop control.
+- readability: The code is reasonably readable with clear function names and comments. However, there are minor improvements to improve clarity, particularly in argument usage and variable naming.
+- performance: The code has good performance. There are no immediately obvious performance bottlenecks.
+- security: The code includes basic input validation to prevent out-of-range errors and handles ValueErrors, improving security. No major security concerns are apparent.
+
