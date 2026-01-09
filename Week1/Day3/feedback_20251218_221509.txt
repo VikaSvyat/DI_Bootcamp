@@ -1,0 +1,11 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week1/Day3/Day3.py
+suggestions for improvement:
+- In Exercise 2, while the final result is correct, you should explicitly state in a comment that tuples are immutable and therefore concatenation is used instead of append.
+- In Exercise 5, the problem asks to print even indexed numbers from 1 to 20. Your code is printing even numbers from 1 to 20. Fix the condition to `if i % 2 == 0:` and print `i+1`.
+- In Exercise 9, the bonus part of the question asks to remove ages that are not allowed to watch from the list. In your case, you are only printing if the age is not allowed but you don't remove it from the list.
+Brief justification:
+- correctness: The code correctly implements almost all the exercises as described in the prompt. The exercises involving sets, lists, loops, and user input are all functionally correct. There are minor issues in Exercise 5 and Exercise 9. Also in exercise 2, the immutability of tuples can be stated explicitly using a comment. Overall, the code fulfills the requirements of the chapter content.
+- readability: The code is well-structured and easy to understand. Variable names are descriptive, and comments are used to explain the purpose of each section of code. There is good use of whitespace and indentation, making the code readable.
+- performance: The code is efficient and performs well for the given tasks. The loops and list operations are optimized for the size of the data involved.
+- security: The code does not have any security vulnerabilities. User inputs are validated to prevent errors.
+
