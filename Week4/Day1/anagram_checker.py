@@ -1,12 +1,15 @@
 class AnagramChecker:
-    def __init__(self, word):        
-        with open ('Week4/Week1/sowpods.txt','r') as f:
-                word_list = f.readlines()
-        self.word_list = [line.strip().lower() for line in word_list]
-        self.word = word.lower()
+    _word_list = None   # class-level cache
 
-    def is_valid_word (self):
-         return self.word in self.word_list
+    def __init__(self): 
+          if AnagramChecker._word_list is None:       
+               with open ('./Week4/Day1/sowpods.txt','r') as f:
+                    AnagramChecker._word_list = [line.strip().lower() for line in f]
+                    
+          self.word_list = AnagramChecker._word_list
+    
+    def is_valid_word (self,word_for_check):
+         return word_for_check.lower() in self.word_list
 
     @staticmethod          
     def is_anagram(word1, word2):
@@ -19,8 +22,8 @@ class AnagramChecker:
                    anagrams.append(w)
          return anagrams
     
-# ac = AnagramChecker("meat")
-# print(ac.is_valid_word())
+# ac = AnagramChecker()
+# print(ac.is_valid_word("race"))
 
 # print(AnagramChecker.is_anagram('meat','amte'))
 # print(ac.get_anagrams("meat"))

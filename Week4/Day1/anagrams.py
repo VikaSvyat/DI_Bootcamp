@@ -32,11 +32,11 @@ def show_menu():
                     break   
                 else:
                     validation(choice)
-                    # Once your code has decided that the user’s input is valid, it should find out the following:
-                    # All possible anagrams to the user’s word.
-                    ac = AnagramChecker(choice)
+                    # Once your code has decided that the user’s input is valid, it should find out All possible anagrams to the user’s word.
+                    ac = AnagramChecker()
                     # Create an AnagramChecker instance and apply it to the steps created above.
-                    print(f'''YOUR WORD :{choice.upper()}\nthis is a valid English word.
+                    ac.is_valid_word(choice)
+                    print(f'''YOUR WORD :{choice.upper()}\nthis is a valid English word - {ac.is_valid_word(choice)}.
 Anagrams for your word: {", ".join(ac.get_anagrams(choice))}''')
                     break
             except ValidationError as e:
