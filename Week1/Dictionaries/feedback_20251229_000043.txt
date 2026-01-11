@@ -1,0 +1,11 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week1/Dictionaries/Challenge.py
+suggestions for improvement:
+- In Challenge 2, consider sorting the `basket` list alphabetically before returning it as the problem statement explicitly requests this.
+- In Challenge 2, the code prioritizes items based on the order in the dictionary, but the instructions specify that the priority is 'from the most important to the less important' and does not update the wallet after buying an item. The wallet is updated but the problem asked to buy the most items possible following the priority, consider buy more items until the wallet is empty.
+- The Caesar Cypher challenge is not part of the original challenge, so it should not be included.
+Brief justification:
+- correctness: The code correctly addresses Challenge 1 by creating a dictionary that stores the indices of each letter in a word. It also correctly implements Challenge 2 by determining affordable items. However, it does not sort the list alphabetically as requested. The wallet is updated but the problem asked to buy the most items possible following the priority. The Caesar Cypher challenge is not part of the original challenge.
+- readability: The code is reasonably readable, with clear variable names and comments explaining the logic. However, it could be improved by adding more comments to explain the purpose of each section of code.
+- performance: The code has good performance. Challenge 1 iterates through the word once, and Challenge 2 iterates through the items in the dictionary once. These operations have linear time complexity, making them efficient for the given task.
+- security: The code's security is adequate. It doesn't involve any user input that could lead to vulnerabilities. However, input validation could be added in Challenge 2 to ensure that the wallet is a valid number.
+

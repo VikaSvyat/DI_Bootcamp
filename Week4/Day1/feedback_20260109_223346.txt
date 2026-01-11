@@ -1,0 +1,25 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/anagram_checker.py
+suggestions for improvement:
+- The `__init__` method takes a word as input, which is not ideal. The word to check should be passed to the `get_anagrams` or `is_valid_word` methods instead.
+- The `is_valid_word` method should take a word as an argument, not rely on the instance variable `self.word`.
+- Consider moving the file reading operation outside the class or caching the word list for better performance, especially if multiple `AnagramChecker` instances are created.
+- Remove the commented-out test code from the class definition.
+Correctness: 75%
+-----
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/anagrams.py
+suggestions for improvement:
+- The `AnagramChecker` class needs to be implemented in a separate file as instructed.
+- The AnagramChecker class should be instantiated once, before the loop, rather than inside the loop
+- The `show_menu` function mixes input gathering, validation, and processing; consider separating these concerns for better modularity.
+- The message 'this is a valid English word' should be conditional based on the result of the `is_valid_word` method call.
+- The code does not load the word list into the anagram checker class as instructed.
+- The code currently calls AnagramChecker() incorrectly. the user input is passed to the init, but is supposed to be the file to be loaded.
+Correctness: 70%
+-----
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/sowpods.txt
+suggestions for improvement:
+- This looks like the content of `sowpods.txt` and not code.
+- This is a zip file's content, but not in the right format.
+- This file needs to be extracted from the zip file, then saved as txt file, because the function requires text file as argument. 
+Correctness: 0.0%
+-----
