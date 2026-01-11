@@ -1,0 +1,10 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week2/Day5/OOP_Daily.py
+suggestions for improvement:
+- Consider adding docstrings to your methods to improve readability and explain their purpose.
+- The f-strings could be slightly more efficient, but the current implementation is clear.
+Brief justification:
+- correctness: The code accurately implements the `Farm` class with the `__init__`, `add_animal`, `get_info`, `get_animal_types`, and `get_short_info` methods as described in the chapter content. It also correctly implements the bonus steps, including the updated `add_animal` method using `**kwargs`. The output matches the expected format.
+- readability: The code is well-structured and easy to follow. The use of meaningful variable names enhances readability. Adding docstrings would further improve it.
+- performance: The code's performance is efficient for the given task. The use of dictionaries provides fast lookups for animal counts, and string formatting is generally performant. The use of `sorted()` is also efficient.
+- security: The code does not involve any external input or operations that could pose a security risk.
+

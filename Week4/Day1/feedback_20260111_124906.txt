@@ -1,0 +1,21 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/anagram_checker.py
+suggestions for improvement:
+- Consider moving the file loading logic outside of the `__init__` method if the word list is very large, to avoid loading it every time an `AnagramChecker` instance is created.  It could be loaded once globally.
+- While the code is functional, adding docstrings to the methods would improve readability.
+- Consider removing the word attribute that gets set in init, since it is only used to check if a given word is valid or not, and that word can be accepted as a parameter in the `is_valid_word` function.
+Correctness: 100%
+-----
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/anagrams.py
+suggestions for improvement:
+- The `AnagramChecker` class needs to be implemented to achieve full functionality and be placed in a separate file as requested.
+- The validation function could be more descriptive in its error messages.
+- The code directly uses the user's input to create an `AnagramChecker` instance, but it needs to check if the word is valid first using the `is_valid_word` method of the AnagramChecker class.
+- The code assumes that the word is valid without verifying this using the appropriate method, `is_valid_word`.
+Correctness: 60%
+-----
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/sowpods.txt
+suggestions for improvement:
+- This is only a dictionary file. It cannot be assessed against the given instructions.
+- This code is just a list of words; it doesn't implement any of the required functionality described in the instructions (creating the `AnagramChecker` class, or the UI logic). This code segment is actually part of the data the program is supposed to use. It doesn't do anything related to OOP or file I/O as specified by the prompt.
+Correctness: 0.0%
+-----

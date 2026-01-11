@@ -1,0 +1,12 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week3/Day2/OPP_Pagination.py
+suggestions for improvement:
+- In `get_visible_items`, it's better to use `self.current_idx * self.page_size` for the start index to make it clearer that it's based on the page index and page size.
+- In `go_to_page`, you should re-raise `ValueError` exception object instead of a generic Exception
+- Consider using more descriptive variable names (e.g., `current_page_number` instead of `current_page`).
+- The print statements in `next_page` and `previous_page` could be replaced with raising exceptions or returning a value to indicate that the page cannot be changed.
+Brief justification:
+- correctness: The code implements the `Pagination` class with `__init__`, `get_visible_items`, navigation methods (`go_to_page`, `first_page`, `last_page`, `next_page`, `previous_page`), and `__str__` as requested. The method chaining is also correctly implemented. `go_to_page` raises an exception when out of range, but does so generically. The calculation in `get_visible_items` is off; it should use `self.current_idx * self.page_size` for the start index. There's also an issue in `previous_page` where it only goes back if `current_page > 2`.
+- readability: The code is generally readable, with appropriate comments. However, some variable names could be more descriptive, and the logic in `get_visible_items` could be clearer.
+- performance: The performance is acceptable for the given problem size. List slicing is generally efficient.
+- security: There are no obvious security concerns.
+
