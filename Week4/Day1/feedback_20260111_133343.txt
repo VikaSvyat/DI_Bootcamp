@@ -1,0 +1,21 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/anagram_checker.py
+suggestions for improvement:
+- Consider using a set instead of a list for `word_list` in `AnagramChecker` for faster lookups in `is_valid_word`.
+- The file path in `__init__` is hardcoded; consider making it configurable or relative to the script's location.
+- While using a class-level cache is good, be aware of memory usage if the word list is very large.  Consider lazy loading or other strategies for large datasets.
+Correctness: 100%
+-----
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/anagrams.py
+suggestions for improvement:
+- Consider moving the AnagramChecker instantiation outside the loop if the word list doesn't change between iterations to improve efficiency.
+- Use a more descriptive variable name than 'ac' for the AnagramChecker instance to enhance readability.
+Correctness: 100%
+-----
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/sowpods.txt
+suggestions for improvement:
+- This is wordlist data, not code. The instructions specified that the anagram_checker.py should contain a class called `AnagramChecker`. and `anagrams.py` which will contain all the UI (user interface) functionality of your program, and will rely on `AnagramChecker` for the anagram-related logic. This file does not contain that code.
+- This part is just a data file. It should not contain code.
+- The file should have been zipped before submission.
+- The provided code is a wordlist and doesn't implement any part of the AnagramChecker class or the UI, thus it's unrelated to the task.
+Correctness: 0.0%
+-----

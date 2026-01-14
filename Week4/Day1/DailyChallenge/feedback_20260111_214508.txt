@@ -1,0 +1,10 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/DailyChallenge/Deck_of_Cards.py
+suggestions for improvement:
+- Consider adding error handling for when the deck is empty and `deal()` is called.
+- The `__str__` method in the `Deck` class could be improved for readability, perhaps by limiting the number of cards printed or using a more concise format.
+Brief justification:
+- correctness: The code accurately implements the `Card` and `Deck` classes as described in the chapter content. It correctly handles card creation, shuffling, and dealing. The `Card` class has suit and value, and the `Deck` class has `shuffle` and `deal` methods. No inheritance from `Card` to `Deck` is present, as requested.
+- readability: The code is generally well-structured and easy to follow. Using descriptive variable names (`suits`, `values`, `cards`) enhances readability.  The `is_card` method could be named `get_card_string` for enhanced clarity. The `__str__` method in `Deck` could be improved.
+- performance: The code's performance is acceptable. The shuffle method uses `random.shuffle`, which is efficient. The `deal` method uses `pop()`, which has O(1) complexity. Constructing the deck using a list comprehension is also efficient.
+- security: The code doesn't present any evident security vulnerabilities. Input validation is performed in the `Card` constructor to prevent invalid card values or suits.
+

@@ -1,0 +1,6 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week4/Day1/DailyChallenge/Deck_of_Cards.py
+suggestions for improvement:
+- Consider adding error handling for when the deck is empty when `deal()` is called.
+- Using a more descriptive variable name than `cc` in the `__str__` method of the `Deck` class would improve readability.
+Correctness: 100%
+-----
