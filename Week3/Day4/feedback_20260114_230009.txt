@@ -1,0 +1,12 @@
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week3/Day4/OOP_Modules_XP.py
+suggestions for improvement:
+- Consider adding more comments to improve code clarity, especially within functions.
+- While not strictly required, using more descriptive variable names would enhance readability.
+- The try-except block for Exercise 1 is a good practice for handling potential errors, but make sure it doesn't mask unexpected exceptions.
+Correctness: 100%
+-----
+URL: https://github.com/VikaSvyat/DI_Bootcamp/blob/main/Week3/Day4/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
