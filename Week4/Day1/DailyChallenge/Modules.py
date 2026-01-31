@@ -1,17 +1,17 @@
-import requests
-import time
 
-def measure_load_time(url):
-    start_time = time.time()
-    
-    response = requests.get(url)
-    response.raise_for_status()  # raise an error if site not available
-    
-    end_time = time.time()
-    
-    return end_time - start_time
+import datetime
 
-urls = ["https://www.google.com","https://www.ynet.com", "https://www.imdb.com"]
-for url in urls:
-    load_time = measure_load_time(url)
-    print(f"Page {url} loaded in {load_time:.3f} seconds")
+today_date = datetime.date.today()
+actual_datetime = datetime.datetime.now()
+in_15_hours = actual_datetime + datetime.timedelta(hours=15, minutes=10)
+
+
+from datetime import datetime
+
+string_date = "23/05/2026"
+
+dt = datetime.strptime(string_date, "%d/%m/%Y")
+
+print(f"Today is the {today_date.strftime("%d/%m")}")
+print(f"In 15 hours and 10 minutes it will be the {in_15_hours.strftime("%d/%m")}")
+print(f"{(dt-actual_datetime)}")
